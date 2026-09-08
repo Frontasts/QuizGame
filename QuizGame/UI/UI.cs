@@ -4,6 +4,33 @@ namespace QuizGame.UI
 {
     public static class UI
     {
+        public static void PrintMenu()
+        {
+            string[] menuTexts = new string[]{
+                "====== Quiz Game ======",
+                "                     ",
+                "=====================",
+                "=   Одиночная игра  =",
+                "=====================",
+                "=        WIP        =",
+                "=====================",
+                "=        WIP        =",
+                "=====================",
+                "=     Настройки     =",
+                "=====================",
+                "=       Выход       =", 
+                "=====================" 
+            };
+
+            int rowOffset = -10;
+
+            foreach (string text in menuTexts)
+            {
+                PrintCenter(text, rowOffset);
+                rowOffset ++;
+            }
+        }
+
         private static void PrintCenter(string text, int rowOffset = 0)
         {
             const int Modifier = 2;
