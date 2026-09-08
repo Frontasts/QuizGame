@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace QuizGame
 {
-    internal class Program
+    public class Game
     {
-        static void Main(string[] args)
+        public void Run()
         {
-            Game game = new Game();
-            game.Run();
+
         }
     }
 }
