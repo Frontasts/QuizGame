@@ -5,8 +5,8 @@ namespace QuizGame.UI
 {
     public static class UI
     {
-        private const char WindowBorderSymbol = '=';
-        private const char EmptySymbol = ' ';
+        private const char _windowBorderSymbol = '=';
+        private const char _emptySymbol = ' ';
 
         public static void PrintMenu()
         {
@@ -50,27 +50,27 @@ namespace QuizGame.UI
             int secondWindowBorderWidth = Width + playerNameLength + playerPointLength;
 
             string[] header = new string[]{
-                new string(WindowBorderSymbol, firstWindowBorderWidth),
-                $"{WindowBorderSymbol} {playerName}             очки - {playerPoint} {WindowBorderSymbol}",
-                new string(WindowBorderSymbol, firstWindowBorderWidth)
+                new string(_windowBorderSymbol, firstWindowBorderWidth),
+                $"{_windowBorderSymbol} {playerName}             очки - {playerPoint} {_windowBorderSymbol}",
+                new string(_windowBorderSymbol, firstWindowBorderWidth)
             };
 
             string[] main = new string[]{
-                WindowBorderSymbol + new string(EmptySymbol, secondWindowBorderWidth) + WindowBorderSymbol,
-                WindowBorderSymbol + new string(EmptySymbol, secondWindowBorderWidth) + WindowBorderSymbol,
-                WindowBorderSymbol + new string(EmptySymbol, secondWindowBorderWidth) + WindowBorderSymbol,
-                WindowBorderSymbol + new string(EmptySymbol, secondWindowBorderWidth) + WindowBorderSymbol,
-                WindowBorderSymbol + new string(EmptySymbol, secondWindowBorderWidth) + WindowBorderSymbol,
-                WindowBorderSymbol + new string(EmptySymbol, secondWindowBorderWidth) + WindowBorderSymbol,
-                WindowBorderSymbol + new string(EmptySymbol, secondWindowBorderWidth) + WindowBorderSymbol,
-                WindowBorderSymbol + new string(EmptySymbol, secondWindowBorderWidth) + WindowBorderSymbol
+                _windowBorderSymbol + new string(_emptySymbol, secondWindowBorderWidth) + _windowBorderSymbol,
+                _windowBorderSymbol + new string(_emptySymbol, secondWindowBorderWidth) + _windowBorderSymbol,
+                _windowBorderSymbol + new string(_emptySymbol, secondWindowBorderWidth) + _windowBorderSymbol,
+                _windowBorderSymbol + new string(_emptySymbol, secondWindowBorderWidth) + _windowBorderSymbol,
+                _windowBorderSymbol + new string(_emptySymbol, secondWindowBorderWidth) + _windowBorderSymbol,
+                _windowBorderSymbol + new string(_emptySymbol, secondWindowBorderWidth) + _windowBorderSymbol,
+                _windowBorderSymbol + new string(_emptySymbol, secondWindowBorderWidth) + _windowBorderSymbol,
+                _windowBorderSymbol + new string(_emptySymbol, secondWindowBorderWidth) + _windowBorderSymbol
             };
 
 
             string[] footer = new string[]{
-                new string(WindowBorderSymbol, firstWindowBorderWidth),
-                WindowBorderSymbol + new string(EmptySymbol, secondWindowBorderWidth) + WindowBorderSymbol,
-                new string(WindowBorderSymbol, firstWindowBorderWidth)
+                new string(_windowBorderSymbol, firstWindowBorderWidth),
+                _windowBorderSymbol + new string(_emptySymbol, secondWindowBorderWidth) + _windowBorderSymbol,
+                new string(_windowBorderSymbol, firstWindowBorderWidth)
             };
 
             int rowOffset = -15;
