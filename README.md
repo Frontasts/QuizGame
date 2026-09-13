@@ -7,7 +7,8 @@
 ## 🖼️ Скриншоты и демонстрация
 *Как выглядит консольное приложение на данный момент:*
 
-![Главное текстовое меню игры](<img width="956" height="484" alt="Main_Menu" src="https://github.com/user-attachments/assets/8e44d96c-4b0e-4699-a16c-2caf217aa269" />)
+<img width="900" height="480" alt="Main_Menu" src="https://github.com/user-attachments/assets/8e44d96c-4b0e-4699-a16c-2caf217aa269" />
+
 *Рис 1. Текущая реализация стартового консольного меню.*
 
 ---
