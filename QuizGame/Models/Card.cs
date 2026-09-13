@@ -40,7 +40,7 @@
             return _answer;
         }
 
-        public bool GetIsPassed()
+        public bool GetPassed()
         {
             return _isPassed;
         }
