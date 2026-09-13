@@ -15,11 +15,14 @@
             _answer = answer;
         }
 
-        public bool TrySetIsPassed(bool isPassed)
+        public void SetCompleted()
         {
-            _isPassed = isPassed;
+            _isPassed = true;
+        }
 
-            return _isPassed;
+        public void SetNotCompleted()
+        {
+            _isPassed = false;
         }
 
         public string GetName()
