@@ -27,11 +27,14 @@ namespace QuizGame.Models
             return true;
         }
 
-        public static bool SetIsActive(bool isActive)
+        public static void Activate()
         {
-            _isActive = isActive;
+            _isActive = true;
+        }
 
-            return _isActive;
+        public static void DeActivate()
+        {
+            _isActive = false;
         }
 
         public static string GetName()
