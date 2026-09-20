@@ -51,6 +51,7 @@
     <Compile Include="Models\TextCard.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\LoadCardService.cs" />
     <Compile Include="UI\UI.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,10 +59,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Saves\Options\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Saves\Card\TestCard.txt" />
+    <Content Include="Saves\Card\TestCard.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
