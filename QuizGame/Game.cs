@@ -1,4 +1,5 @@
 ﻿using System;
+using QuizGame.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,9 @@ namespace QuizGame
 {
     public class Game
     {
+        private List<Player> _players;
+        private List<Card> _cards;
+
         public void Run()
         {
             const char SoloGameCommand = '1';
