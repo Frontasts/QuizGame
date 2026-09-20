@@ -46,7 +46,6 @@
 classDiagram
     namespace Models {
         class Game {
-            -GameMaster master
             -List~Player~ players
             -List~Card~ cards
             +Run()
