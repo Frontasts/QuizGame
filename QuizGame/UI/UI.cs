@@ -94,6 +94,31 @@ namespace QuizGame.UI
             }
         }
 
+        public static void PrintSoloGameOptions()
+        {
+            string[] optionsTexts = new string[]{
+                "====== Настройки одиночной ссесии ======",
+                "                                        ",
+                "========================================",
+                "=    1: Название сетапа карточек       =",
+                "========================================",
+                "=            2: Ник игрока             =",
+                "========================================",
+                "=              3: Таймер               =",
+                "========================================",
+                "=                 Выход                =",
+                "========================================"
+            };
+
+            int rowOffset = -10;
+
+            foreach (string text in optionsTexts)
+            {
+                PrintCenter(text, rowOffset);
+                rowOffset++;
+            }
+        }
+
         private static void PrintCenter(string text, int rowOffset = 0)
         {
             const int Modifier = 2;
