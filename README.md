@@ -11,6 +11,10 @@
 
 *Рис 1. Текущая реализация стартового консольного меню.*
 
+<img width="569" height="719" alt="image" src="https://github.com/user-attachments/assets/1ccbbd57-4aaf-46cd-be9c-bb51291c2f17" />
+
+*Рис 2. Текущая реализация SoloGame консольного окна.*
+
 ---
 
 ## 🛠️ Текущий статус разработки
