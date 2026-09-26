@@ -58,6 +58,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Document\" />
     <Folder Include="Saves\Options\" />
   </ItemGroup>
   <ItemGroup>
