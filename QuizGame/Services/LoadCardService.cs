@@ -27,7 +27,7 @@ namespace QuizGame.Services
             const int AnswerIndex = 3;
 
             List<TextCard> textCards = new List<TextCard>();
-            string[] cards = TxTHelper.TxTRead(_cardFilePath);
+            string[] cards = TxTHandler.TxTRead(_cardFilePath);
 
             foreach (string card in cards.Skip(LineSkippedNumber).ToArray())
             {
