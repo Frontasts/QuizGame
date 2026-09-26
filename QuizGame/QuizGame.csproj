@@ -47,11 +47,13 @@
     <Compile Include="Helpers\TxTHandler.cs" />
     <Compile Include="Models\Card.cs" />
     <Compile Include="Models\GameMaster.cs" />
+    <Compile Include="Models\GameOption.cs" />
     <Compile Include="Models\Player.cs" />
     <Compile Include="Models\TextCard.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\LoadCardService.cs" />
+    <Compile Include="Services\OptionsService.cs" />
     <Compile Include="UI\UI.cs" />
   </ItemGroup>
   <ItemGroup>

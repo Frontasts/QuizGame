@@ -1,4 +1,5 @@
 ﻿using QuizGame.Models;
+using QuizGame.Services;
 using System;
 using System.Collections.Generic;
 
@@ -206,19 +207,27 @@ namespace QuizGame.UI
 
         public static void PrintGameOptions()
         {
+            OptionsService optionsService = new OptionsService();
+            GameOption gameOptions = optionsService.LoadOptions();
+
+            string colorBackground = gameOptions.GetColorBackground();
+            string colorForeground = gameOptions.GetColorForeground();
+            string monitorResolutionX = gameOptions.GetMonitorResolutionX();
+            string monitorResolutionY = gameOptions.GetMonitorResolutionY();
+            string language = gameOptions.GetLanguage();
 
 
             string[] optionsTexts = new string[]{
-                "====== Настройки одиночной ссесии ======",
+                "======       Настройки Игры       ======",
                 "                                        ",
                 "========================================",
-                "=    1: Название сетапа карточек       =",
+                $"=    Цвет фона консоли: {colorBackground}       =",
                 "========================================",
-                "=            2: Ник игрока             =",
+                $"=    Цвет текста консоли: {colorBackground}             =",
                 "========================================",
-                "=              3: Таймер               =",
+                $"=    Разрешение экрана: {monitorResolutionX}-{monitorResolutionY}          =",
                 "========================================",
-                "=                 Выход                =",
+                $"=        Язык: {monitorResolutionX}                =",
                 "========================================"
             };
         }
