@@ -8,40 +8,48 @@ namespace QuizGame.Models
 {
     public struct GameOption
     {
-        private string ColorBackground;
-        private string ColorForeground;
-        private string MonitorResolutionX;
-        private string MonitorResolutionY;
-        private string Language;
+        private string _colorBackground;
+        private string _colorForeground;
+        private string _monitorResolutionX;
+        private string _monitorResolutionY;
+        private string _language;
 
+        public GameOption(string colorBackground, string colorForeground, string monitorResolutionX, string monitorResolutionY, string language)
+        {
+            _colorBackground = colorBackground;
+            _colorForeground = colorForeground;
+            _monitorResolutionX = monitorResolutionX;
+            _monitorResolutionY = monitorResolutionY;
+            _language = language;
+        }
         public string GetColorBackground()
         {
-            return ColorBackground;
+            return _colorBackground;
         }
 
         public string GetColorForeground()
         {
-            return ColorForeground;
+            return _colorForeground;
         }
 
         public string GetMonitorResolutionX()
         {
-            return MonitorResolutionX;
+            return _monitorResolutionX;
         }
 
         public string GetMonitorResolutionY()
         {
-            return MonitorResolutionY;
+            return _monitorResolutionY;
         }
 
         public string GetLanguage()
         {
-            return Language;
+            return _language;
         }
 
         public override string ToString()
         {
-            return $"{ColorBackground} {ColorForeground} {MonitorResolutionX} {MonitorResolutionY} {Language}";
+            return $"{_colorBackground} {_colorForeground} {_monitorResolutionX} {_monitorResolutionY} {_language}";
         }
 
     }
