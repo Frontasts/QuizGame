@@ -1,0 +1,6 @@
+﻿Параметр значение
+ColorBackground Default
+ColorForeground Default
+MonitorResolutionX 1920
+MonitorResolutionY 1080
+Language Русский

@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Game.cs" />
-    <Compile Include="Helpers\TxTHelper.cs" />
+    <Compile Include="Helpers\TxTHandler.cs" />
     <Compile Include="Models\Card.cs" />
     <Compile Include="Models\GameMaster.cs" />
     <Compile Include="Models\Player.cs" />
@@ -57,14 +57,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Document\" />
-    <Folder Include="Saves\Options\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="Document\Блок-схема игрового цикла.png" />
+    <Content Include="Document\Диограмма классов.png" />
     <Content Include="Saves\Card\TestCard.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Saves\Options\OptionsGame.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

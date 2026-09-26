@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace QuizGame.Helpers
 {
-    public static class TxTHelper
+    public static class TxTHandler
     {
         public static bool TxTWrite(string filePath, string[] texts)
         {
